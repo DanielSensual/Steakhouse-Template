@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 
 const galleryImages = [
-    { id: 1, alt: 'Signature Ribeye', span: 'col-span-2 row-span-2' },
-    { id: 2, alt: 'Wine Cellar', span: 'col-span-1 row-span-1' },
-    { id: 3, alt: 'Intimate Dining Room', span: 'col-span-1 row-span-1' },
-    { id: 4, alt: 'Craft Cocktails', span: 'col-span-1 row-span-1' },
-    { id: 5, alt: 'Private Dining', span: 'col-span-1 row-span-1' },
+    { id: 1, alt: 'Signature Ribeye', span: 'col-span-2 row-span-2', src: '/gallery-1.png' },
+    { id: 2, alt: 'Wine Cellar', span: 'col-span-1 row-span-1', src: '/gallery-2.png' },
+    { id: 3, alt: 'Intimate Dining Room', span: 'col-span-1 row-span-1', src: '/gallery-3.png' },
+    { id: 4, alt: 'Craft Cocktails', span: 'col-span-1 row-span-1', src: '/gallery-4.png' },
+    { id: 5, alt: 'Private Dining', span: 'col-span-1 row-span-1', src: '/hero-poster.png' },
 ];
 
 export default function Gallery() {
@@ -50,15 +50,11 @@ export default function Gallery() {
                             transition={{ duration: 0.5, delay: idx * 0.1 }}
                             className={`${image.span} relative group rounded-2xl overflow-hidden bg-[#1A1A1A] border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 transition-all duration-500`}
                         >
-                            {/* Placeholder */}
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="text-center px-4">
-                                    <svg className="w-10 h-10 mx-auto text-[#D4AF37]/30 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
-                                    <span className="text-xs text-[#FAF9F6]/40">{image.alt}</span>
-                                </div>
-                            </div>
+                            <img
+                                src={image.src}
+                                alt={image.alt}
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
 
                             {/* Hover overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">

@@ -47,17 +47,11 @@ export default function Experience() {
                         className="relative"
                     >
                         <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-[#722F37]/20 border border-[#D4AF37]/20">
-                            {/* Placeholder for chef/kitchen image */}
-                            <div className="w-full h-full flex items-center justify-center">
-                                <div className="text-center px-8">
-                                    <div className="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-[#D4AF37]/40 flex items-center justify-center">
-                                        <svg className="w-12 h-12 text-[#D4AF37]/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                        </svg>
-                                    </div>
-                                    <p className="text-[#FAF9F6]/40 text-sm">Chef & Kitchen Image</p>
-                                </div>
-                            </div>
+                            <img
+                                src="/chef-experience.png"
+                                alt="Chef at PRIME Steakhouse preparing prime cuts"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                         {/* Floating accent */}
                         <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center">
