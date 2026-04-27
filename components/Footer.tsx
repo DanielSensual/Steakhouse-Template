@@ -106,8 +106,8 @@ export default function Footer() {
                         </h4>
                         <ul className="space-y-3 text-sm">
                             <li>
-                                <a href="tel:+15551234567" className="text-[#FAF9F6]/60 hover:text-[#D4AF37] transition-colors">
-                                    (555) 123-4567
+                                <a href="tel:+13215106271" className="text-[#FAF9F6]/60 hover:text-[#D4AF37] transition-colors">
+                                    (321) 510-6271
                                 </a>
                             </li>
                             <li>

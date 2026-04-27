@@ -87,7 +87,7 @@ export default function HeroVideo() {
                         className="flex flex-col sm:flex-row items-center justify-center gap-4"
                     >
                         <a
-                            href="tel:+13210000000"
+                            href="tel:+13215106271"
                             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#D4AF37] text-[#0D0D0D] text-sm uppercase tracking-[0.2em] font-semibold hover:bg-[#E8C857] transition-all duration-300 btn-glow"
                         >
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
