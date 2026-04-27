@@ -62,9 +62,8 @@ export default function Footer() {
                             Location
                         </h4>
                         <address className="not-italic text-sm text-[#FAF9F6]/60 leading-relaxed">
-                            123 Gourmet Avenue<br />
-                            Downtown District<br />
-                            New York, NY 10001
+                            742 W Pine St<br />
+                            Orlando, FL 32801
                         </address>
                         <a
                             href="#"
@@ -89,16 +88,8 @@ export default function Footer() {
                         </h4>
                         <ul className="space-y-3 text-sm">
                             <li className="flex justify-between text-[#FAF9F6]/60">
-                                <span>Monday – Thursday</span>
-                                <span className="text-[#FAF9F6]">5 PM – 10 PM</span>
-                            </li>
-                            <li className="flex justify-between text-[#FAF9F6]/60">
-                                <span>Friday – Saturday</span>
+                                <span>Monday – Sunday</span>
                                 <span className="text-[#FAF9F6]">5 PM – 11 PM</span>
-                            </li>
-                            <li className="flex justify-between text-[#FAF9F6]/60">
-                                <span>Sunday</span>
-                                <span className="text-[#FAF9F6]">4 PM – 9 PM</span>
                             </li>
                         </ul>
                     </motion.div>
@@ -141,9 +132,20 @@ export default function Footer() {
                     <p className="text-xs text-[#FAF9F6]/40">
                         © {new Date().getFullYear()} PRIME Steakhouse. All rights reserved.
                     </p>
-                    <div className="flex gap-6 text-xs text-[#FAF9F6]/40">
+                    <div className="flex gap-6 text-xs text-[#FAF9F6]/40 items-center">
                         <a href="#" className="hover:text-[#D4AF37] transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-[#D4AF37] transition-colors">Terms of Service</a>
+                        <span className="text-[#FAF9F6]/20">·</span>
+                        <a
+                            href="https://ghostaisystems.com/orderhub"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-[#FAF9F6]/40 hover:text-[#D4AF37] transition-colors"
+                        >
+                            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            Powered by Ghost AI Systems
+                        </a>
                     </div>
                 </div>
             </div>

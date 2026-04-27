@@ -67,6 +67,19 @@ export default function HeroVideo() {
                         Exceptional steaks, curated wines, and an atmosphere crafted for those who appreciate the finer things.
                     </motion.p>
 
+                    {/* AI Badge */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0.7 }}
+                        className="flex justify-center mb-6"
+                    >
+                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#D4AF37] text-xs uppercase tracking-[0.2em]">
+                            <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
+                            AI-Powered Ordering — Call or Text
+                        </span>
+                    </motion.div>
+
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -74,10 +87,19 @@ export default function HeroVideo() {
                         className="flex flex-col sm:flex-row items-center justify-center gap-4"
                     >
                         <a
-                            href="#reserve"
+                            href="tel:+13210000000"
                             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#D4AF37] text-[#0D0D0D] text-sm uppercase tracking-[0.2em] font-semibold hover:bg-[#E8C857] transition-all duration-300 btn-glow"
                         >
-                            Reserve Your Table
+                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Call to Order
+                        </a>
+                        <a
+                            href="#reserve"
+                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-[#D4AF37] text-[#D4AF37] text-sm uppercase tracking-[0.2em] font-medium hover:bg-[#D4AF37] hover:text-[#0D0D0D] transition-all duration-300"
+                        >
+                            Reserve Table
                         </a>
                         <a
                             href="#menu"
