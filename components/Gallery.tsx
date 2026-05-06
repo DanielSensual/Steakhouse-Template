@@ -3,11 +3,14 @@
 import { motion } from 'framer-motion';
 
 const galleryImages = [
-    { id: 1, alt: 'Signature Ribeye', span: 'col-span-2 row-span-2', src: '/gallery-1.png' },
-    { id: 2, alt: 'Wine Cellar', span: 'col-span-1 row-span-1', src: '/gallery-2.png' },
-    { id: 3, alt: 'Intimate Dining Room', span: 'col-span-1 row-span-1', src: '/gallery-3.png' },
-    { id: 4, alt: 'Craft Cocktails', span: 'col-span-1 row-span-1', src: '/gallery-4.png' },
-    { id: 5, alt: 'Private Dining', span: 'col-span-1 row-span-1', src: '/hero-poster.png' },
+    { id: 1, alt: 'Tomahawk Ribeye — Dry-Aged 60 Days', span: 'col-span-2 row-span-2', src: '/tomahawk-steak.png' },
+    { id: 2, alt: 'The Wine Cellar', span: 'col-span-1 row-span-1', src: '/wine-cellar.png' },
+    { id: 3, alt: 'Intimate Dining Experience', span: 'col-span-1 row-span-1', src: '/candlelit-dining.png' },
+    { id: 4, alt: 'Chocolate Lava Cake', span: 'col-span-1 row-span-1', src: '/chocolate-lava-cake.png' },
+    { id: 5, alt: 'Chef\'s Preparation', span: 'col-span-1 row-span-1', src: '/chef-experience.png' },
+    { id: 6, alt: 'The PRIME Atmosphere', span: 'col-span-2 row-span-1', src: '/gallery-1.png' },
+    { id: 7, alt: 'Craft Cocktails', span: 'col-span-1 row-span-1', src: '/gallery-4.png' },
+    { id: 8, alt: 'Private Dining Room', span: 'col-span-1 row-span-1', src: '/gallery-3.png' },
 ];
 
 export default function Gallery() {
@@ -47,7 +50,7 @@ export default function Gallery() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: idx * 0.1 }}
+                            transition={{ duration: 0.5, delay: idx * 0.08 }}
                             className={`${image.span} relative group rounded-2xl overflow-hidden bg-[#1A1A1A] border border-[#D4AF37]/10 hover:border-[#D4AF37]/40 transition-all duration-500`}
                         >
                             <img

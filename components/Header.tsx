@@ -7,6 +7,7 @@ import clsx from 'clsx';
 const navLinks = [
     { label: 'Menu', href: '#menu' },
     { label: 'Experience', href: '#experience' },
+    { label: 'Private Events', href: '#private-events' },
     { label: 'Gallery', href: '#gallery' },
     { label: 'Reserve', href: '#reserve' },
 ];
